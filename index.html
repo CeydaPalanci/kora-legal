@@ -12,7 +12,7 @@
   h1 { font-size:1.9rem; margin:0 0 4px; }
   h2 { font-size:1.2rem; margin:32px 0 8px; color:var(--accent); }
   .muted { color:var(--muted); }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin:16px 0; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 20px; margin:16px 0; overflow-x:auto; }
   ul { padding-left:1.2em; } li { margin:4px 0; }
   a { color:var(--accent); }
   table { width:100%; border-collapse:collapse; font-size:.95rem; }
@@ -22,7 +22,7 @@
 <body>
 <main>
   <h1>Kora Gizlilik Politikası</h1>
-  <p class="muted">Son güncelleme: 25 Ekim 2026</p>
+  <p class="muted">Son güncelleme: 28 Ekim 2026</p>
 
   <p>Bu politika, Kora mobil uygulamasının ("Kora", "uygulama") hangi kişisel verileri topladığını, bunları nasıl kullandığını, kimlerle paylaştığını ve haklarınızı açıklar. Kora, Ceyda Palancı tarafından "CydPlnc Apps" adıyla geliştirilmektedir. 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu Ceyda Palancı'dır. Bu metin aynı zamanda KVKK'nın 10. maddesi uyarınca aydınlatma metni niteliğindedir.</p>
 
@@ -31,9 +31,8 @@
     <li><strong>Hesap bilgileri:</strong> e-posta adresi, kullanıcı adı, şifre (yalnızca hash'lenmiş hâliyle saklanır). Google ile giriş yaparsanız Google'ın paylaştığı ad, e-posta ve profil fotoğrafı.</li>
     <li><strong>Profil fotoğrafı:</strong> uygulamadan yüklemeyi seçtiğiniz profil fotoğrafı. Yeni bir fotoğraf yüklediğinizde eskisi silinir.</li>
     <li><strong>Tarif içerikleri:</strong> eklediğiniz YouTube bağlantıları, bunlardan oluşturulan tarifler ve tarifler için üretilen görseller.</li>
-    <li><strong>Tarif fotoğrafları:</strong> tarif taramak için yüklediğiniz fotoğraflar yalnızca tarifi çıkarmak için analiz edilir; sunucularımızda saklanmaz.</li>
+    <li><strong>Tarif fotoğrafları:</strong> tarif taramak için yüklediğiniz fotoğraflar yalnızca tarifi çıkarmak için analiz edilir; sunucularımızda saklanmaz. Uygulama galerinize erişim izni istemez; yalnızca sizin seçtiğiniz veya kamerayla çektiğiniz fotoğraflar uygulamaya aktarılır.</li>
     <li><strong>Ses verisi:</strong> sesli pişirme modunu kullandığınızda mikrofonunuzdan alınan ses, konuşmanızın yazıya çevrilmesi ve asistanın yanıt vermesi için gerçek zamanlı olarak işlenir.</li>
-    <li><strong>Arama sorguları:</strong> Tariflerim ekranında yaptığınız aramalar yalnızca tariflerinizi filtrelemek için anlık olarak işlenir; kaydedilmez.</li>
     <li><strong>Kullanım bilgileri:</strong> pişirme oturumlarının sayısı ve tarihi (kullanım kotası için), abonelik durumu.</li>
     <li><strong>Cihaz ayarları:</strong> uyandırma kelimesi, ses tercihi, ekranı açık tutma gibi ayarlar yalnızca cihazınızda saklanır, sunucularımıza gönderilmez.</li>
   </ul>
@@ -73,7 +72,7 @@
     <tr><td>Google (Gmail)</td><td>Hizmet e-postalarının gönderilmesi</td><td>E-posta adresi, e-posta içeriği (doğrulama ve şifre sıfırlama kodları)</td></tr>
     <tr><td>LiveKit</td><td>Gerçek zamanlı ses bağlantısı (Avrupa bölgesi)</td><td>Pişirme modundaki ses</td></tr>
     <tr><td>Deepgram</td><td>Konuşmayı yazıya çevirme</td><td>Pişirme modundaki ses</td></tr>
-    <tr><td>OpenAI</td><td>Sesli komutların anlaşılması</td><td>Konuşmanın yazıya çevrilmiş hâli, tarif adımları</td></tr>
+    <tr><td>OpenAI</td><td>Sesli komutların anlaşılması</td><td>Konuşmanın yazıya çevrilmiş hâli, son konuşma geçmişi ve tarif içeriği</td></tr>
     <tr><td>ElevenLabs</td><td>Asistanın sesli yanıtları</td><td>Asistanın söyleyeceği metin</td></tr>
     <tr><td>Google Play</td><td>Uygulama dağıtımı ve abonelik ödemeleri</td><td>Satın alma bilgileri (ödeme bilgilerinizi biz görmeyiz)</td></tr>
   </table>
